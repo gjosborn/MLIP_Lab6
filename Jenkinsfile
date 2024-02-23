@@ -14,7 +14,10 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
-                pytest
+                
+		source mlip/bin/activate
+
+		pytest
                 '''
             }
         }
