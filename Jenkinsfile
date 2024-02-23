@@ -15,6 +15,7 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
                 sudo pytest
+                '''
             }
         }
         stage('Deploy') {
