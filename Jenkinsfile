@@ -14,13 +14,7 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
-                source ../mlip/bin/activate
-
                 sudo pytest
-
-                # exit 1 #comment this line after implementing Jenkinsfile
-                '''
-
             }
         }
         stage('Deploy') {
