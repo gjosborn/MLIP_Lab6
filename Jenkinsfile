@@ -16,8 +16,7 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                home/mlip/MLIP_Lab6/mlip/bin/activate
-                pip install -r requirements.txt
+                source home/mlip/MLIP_Lab6/mlip/bin/activate
                 pytest
                 # TODO Complete the command to run pytest
                 # home/miniconda3/bin/conda run -n mlip pytest
