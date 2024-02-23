@@ -14,13 +14,11 @@ pipeline {
             steps {
                  sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
-                cd ${WORKSPACE}
-                cat ${WORKSPACE}
-                # TODO fill out the path to conda here
                 
-                # TODO Complete the command to run pytest
-                mlip/bin/python -m pip install -r requirements.txt  # Install dependencies
-                mlip/bin/python -m pytest  # Run pytest
+                # TODO fill out the path to conda here
+                /home/miniconda3/bin/conda init
+                /home/miniconda3/bin/conda run -n mlip pytest
+                
                 
                 #echo 'pytest not runned'
                 #exit 1 #comment this line after implementing Jenkinsfile
