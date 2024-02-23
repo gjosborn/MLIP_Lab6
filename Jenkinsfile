@@ -16,8 +16,8 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
                 
                 # TODO fill out the path to conda here
-                /home/miniconda3/bin/conda init
-                /home/miniconda3/bin/conda run -n mlip pytest
+                /home/miniconda3/bin/ init
+                /home/miniconda3/bin/ run -n mlip pytest
                 
                 
                 #echo 'pytest not runned'
