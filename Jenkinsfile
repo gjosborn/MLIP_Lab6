@@ -14,8 +14,8 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
-                sudo conda init
-		sudo conda activate mlip
+                conda init
+		conda activate mlip
 		pytest
                 '''
             }
