@@ -15,6 +15,7 @@ pipeline {
                  sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
                 cd ${WORKSPACE}
+                cat ${WORKSPACE}
                 # TODO fill out the path to conda here
                 
                 # TODO Complete the command to run pytest
